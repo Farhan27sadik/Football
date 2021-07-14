@@ -8,7 +8,7 @@ body{
     background-color: #283747;
 }
 
-nav>span>a{
+.navl{
     float: left;
     color: #f2f2f2;
     text-align: center;
@@ -16,14 +16,11 @@ nav>span>a{
     text-decoration: none;
     font-size: 17px;
     overflow: hidden;
+    display: block;
     margin: 10px;
     font-family: 'Poppins', sans-serif;
 }
-.navl{
-    font-family: 'Poppins', sans-serif;
-    
 
-}
 nav{
     display: flex;
     justify-content: space-between;
@@ -39,7 +36,7 @@ nav{
     font-weight: 500;
     font-size: 16px;
     padding: 5px 24px;
-
+    text-decoration: none;
 }
 
 .header-section{
@@ -56,7 +53,6 @@ nav{
 
 .heading{
     
-    flex-direction: column;
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
@@ -103,6 +99,7 @@ nav{
 main{
     margin-bottom: 100px;
 }
+
 .players-section{
     margin-top: 30px;
     display: flex;
@@ -144,6 +141,70 @@ main{
 
 
 
+
+
+/* hghlght section */
+.hghlghts-section{
+    display: flex;
+    flex-direction: row;
+    margin: 4%;
+    
+}
+
+.hghlght-title{
+    padding: 5%
+}
+
+.hghlght-title h1{
+    font-size: 48px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.hghlght-title p{
+    font-size: 20px;
+    color: white;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.watch-live-button{
+    text-decoration: none;
+    background-color: #E02C6D;
+    color: #FFFFFF;
+    margin-left: 40%;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.watch-live:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-out;
+}
+
+.watch-live-button .fa-arrow-right{
+    margin: 30px;
+}
+
+.hghlght-banner img{
+    width: 567px;
+    margin: 30px;
+    border-radius: 5px;
+}
+
+.hghlght-banner img:hover{
+    transform: scale(1.1);
+    transition: transform 1s ease-out;
+}
+
+
+
+
 /* Footer Section */
 .footer{
     display: flex;
@@ -177,4 +238,138 @@ main{
 }
 #cpyrgt{
     margin-bottom: 63px;
+}
+
+
+/* ------------------Media query-------------------------------- */
+
+/* Mobile device */
+@media only screen and (max-width: 688px){
+
+    /* /////////banner/////////////// */
+
+
+    .navl{
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        overflow: hidden;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+    nav{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    
+}
+.heading{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding-top: 100px;
+    padding-left: 20%;
+    padding-bottom: 20%;  
+    
+}
+
+.header-section h1:hover{
+    color: cyan;
+    transition: color 1s ease-out;
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+#banner-img{
+    height: 290px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+}
+
+#banner-img:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+.watch{
+    color: white;
+    background-color:  #E02C6D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    width: 120px;
+    height: 44px;
+    margin: 20%;
+    
+    
+}
+
+
+
+
+.players{
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.playerP{
+    transform: scale(.9);
+}
+    
+
+
+
+    /* highlight part */
+
+    .hghlght-title{
+        transform: scale(.7);
+        
+    }
+    .watch-live{
+        text-decoration: none;
+        background-color: #E02C6D;
+        color: #FFFFFF;
+        font-size: 27px;
+        border-radius: 5px;
+    }
+
+    .hghlghts-section{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .hghlght-title{
+        width: 100%;
+    }
+
+    .hghlght-banner{
+        width: 40%;
+        transform: scale(.55);
+    }
+    
+
+    /* Footer part done */
+
+
+    .footer-logo img{
+        transform: scale(.3);
+        padding-left: 10%;
+    }
+    #cpyrgt{
+        align-items: center;
+        transform: scale(.6);
+    }
 }
